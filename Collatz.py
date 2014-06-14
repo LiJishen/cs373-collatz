@@ -54,7 +54,7 @@ def collatz_eval (i, j) :
 
             while n != 1:
                 if n % 2 == 0:
-                    n = n / 2
+                    n = n // 2
                     count = count +1
                 else:
                     n = n + n//2 + 1
