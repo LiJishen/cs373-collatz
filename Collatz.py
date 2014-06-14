@@ -39,11 +39,9 @@ def collatz_eval (i, j) :
         temp = i
         i = j
         j = temp
-
+    max_length = 1;
     if i < j//2:
         i = j//2
-
-    max_length = 1;
     for a in range(i, j+1):
         n = a
         count = 1
