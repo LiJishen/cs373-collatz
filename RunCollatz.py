@@ -18,10 +18,12 @@ To document the program
 """
 
 # -------
+
 # imports
 # -------
 
 import sys
+
 
 from Collatz import collatz_solve
 

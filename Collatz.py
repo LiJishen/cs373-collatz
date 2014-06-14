@@ -10,6 +10,7 @@
 # collatz_read
 # ------------
 
+
 def collatz_read (r) :
     """
     read two ints
@@ -33,8 +34,17 @@ def collatz_eval (i, j) :
     return the max cycle length in the range [i, j]
     """
     # <your code>
-    max_length = 0;
-    for a in range(i, j):
+
+    if i > j:
+        temp = i
+        i = j
+        j = temp
+
+    if i < j//2:
+        i = j//2
+
+    max_length = 1;
+    for a in range(i, j+1):
         n = a
         count = 1
         while n != 1:
@@ -42,8 +52,8 @@ def collatz_eval (i, j) :
                 n = n / 2
                 count = count +1
             else:
-                n = n * 3 + 1
-                count = count +1
+                n = n + n//2 + 1
+                count = count +2
         if max_length < count:
             max_length = count
 
