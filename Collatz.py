@@ -27,6 +27,8 @@ def collatz_read (r) :
 # collatz_eval
 # ------------
 
+storage = {}
+
 def collatz_eval (i, j) :
     """
     i is the beginning of the range, inclusive
@@ -43,15 +45,26 @@ def collatz_eval (i, j) :
     if i < j//2:
         i = j//2
     for a in range(i, j+1):
-        n = a
         count = 1
-        while n != 1:
-            if n % 2 == 0:
-                n = n / 2
-                count = count +1
-            else:
-                n = n + n//2 + 1
-                count = count +2
+        n = a
+        if n in storage:
+            count = storage[n]
+
+        else:
+
+            while n != 1:
+                if n % 2 == 0:
+                    n = n / 2
+                    count = count +1
+                else:
+                    n = n + n//2 + 1
+                    count = count +2
+                if n in storage:
+                    count += storage[n] - 1
+                    break;
+            storage[a] = count
+
+
         if max_length < count:
             max_length = count
 
