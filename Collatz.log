@@ -1,0 +1,47 @@
+commit f39bfaf5fcb0e2ac847540379ec0fe285f543da7
+Author: Jishen Li <ljs765@gmail.com>
+Date:   Mon Jun 16 16:11:28 2014 -0500
+
+    turnin version
+
+commit 5eda46de2b4314d8db4c11fa719f1bbed0b48387
+Author: Jishen Li <ljs765@gmail.com>
+Date:   Mon Jun 16 09:31:59 2014 -0500
+
+    adding SphereCollatz.py
+
+commit afd7e6906d59a673ab3f3e38aa40b972b0562006
+Author: Jishen Li <ljs765@gmail.com>
+Date:   Sat Jun 14 16:33:56 2014 -0500
+
+    fixed the division operation bug
+
+commit cc3410f215982ff7e9c47f82f87c281c25e7ff13
+Author: Jishen Li <ljs765@gmail.com>
+Date:   Sat Jun 14 16:27:21 2014 -0500
+
+    added cache
+
+commit 43599eaf9ec69fee027eb2d1b01f944fdc279b58
+Author: Jishen Li <ljs765@gmail.com>
+Date:   Sat Jun 14 15:55:57 2014 -0500
+
+    Second optimization
+
+commit 85b7d3694b6bbfb2a5fa9baae17e0e26d8c3b3d8
+Author: Jishen Li <ljs765@gmail.com>
+Date:   Sat Jun 14 15:47:18 2014 -0500
+
+    added code that combine two operations into one if n is odd
+
+commit 5e54b5d712cb5f0f02e0a684b6afa646ca305699
+Author: Jishen Li <ljs765@gmail.com>
+Date:   Wed Jun 11 15:22:47 2014 -0500
+
+    The simplest possible solution
+
+commit 38964fcd47a468046a52b6c65304801fac9906cf
+Author: Jishen Li <ljs765@gmail.com>
+Date:   Wed Jun 11 12:41:09 2014 -0500
+
+    original code
