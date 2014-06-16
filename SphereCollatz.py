@@ -6,7 +6,7 @@ cache = {}
 def collatz_read (r) :
     """
     read two ints
-    r is a reader
+    r is a readerd
     return a list of the two ints, otherwise a list of zeros
     """
     s = r.readline()
@@ -26,6 +26,7 @@ def collatz_eval (i, j) :
     return the max cycle length in the range [i, j]
     """
     # <your code>
+
 
     if i > j:
         temp = i

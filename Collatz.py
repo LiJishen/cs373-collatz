@@ -27,7 +27,7 @@ def collatz_read (r) :
 # collatz_eval
 # ------------
 
-storage = {}
+cache = {}
 
 def collatz_eval (i, j) :
     """
@@ -37,36 +37,41 @@ def collatz_eval (i, j) :
     """
     # <your code>
 
+
     if i > j:
         temp = i
         i = j
         j = temp
-    max_length = 1;
+
     if i < j//2:
         i = j//2
+
+
+    max_length = 1;
     for a in range(i, j+1):
-        count = 1
         n = a
-        if n in storage:
-            count = storage[n]
+        count = 1
+
+        if n in cache:
+        #if cache[n] != 0:
+            count = cache[n]
 
         else:
-
             while n != 1:
                 if n % 2 == 0:
                     n = n // 2
                     count = count +1
-                else:
-                    n = n + n//2 + 1
-                    count = count +2
-                if n in storage:
-                    count += storage[n] - 1
+                elif n % 2 != 0:
+                    n = n + n//2 +1
+                    count = count + 2
+                if n in cache:
+                    count += cache[n]-1
                     break;
-            storage[a] = count
-
+            cache[a] = count;
 
         if max_length < count:
             max_length = count
+        
 
     return max_length
 
