@@ -115,10 +115,6 @@ class TestCollatz (TestCase) :
         w = StringIO()
         collatz_print(w, 0, 0, 0)
         self.assertEqual(w.getvalue(), "0 0 0\n")
-    def test_print_4 (self) :
-        w = StringIO()
-        collatz_print(w, 0, 1, 0)
-        self.assertEqual(w.getvalue(), "0 1 0\n")
 
 
 
